@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jo6-5O-LC9">
+                                <rect key="frame" x="20" y="629" width="350" height="4"/>
+                                <color key="progressTintColor" red="0.0" green="0.0" blue="0.99701227907274592" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Egg Choices" translatesAutoresizingMaskIntoConstraints="NO" id="iPh-7c-yME">
+                                <rect key="frame" x="0.0" y="357" width="390" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="Kdb-fv-U20"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wec-J2-zj9">
+                                <rect key="frame" x="39" y="439" width="43" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wHG-lM-izL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="wSI-rY-DES"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Soft">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choicesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRx-8a-mDh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HY-jm-Wrp">
+                                <rect key="frame" x="153" y="432" width="92" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="GDk-7f-Qra"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choicesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Psf-Vm-z44"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Do You Like Your Eggs?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvv-KK-J8T">
+                                <rect key="frame" x="0.0" y="277" width="390" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="bMd-ga-eSs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-xO-qM7">
+                                <rect key="frame" x="305" y="440.66666666666669" width="51" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BRR-42-AmZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="udz-q4-ozW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choicesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pz-us-onA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.40784313725490196" green="0.41960784313725491" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bvv-KK-J8T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="02E-B8-elh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jo6-5O-LC9" secondAttribute="bottom" constant="177" id="1ko-Fb-5JE"/>
+                            <constraint firstAttribute="bottom" secondItem="wec-J2-zj9" secondAttribute="bottom" constant="385" id="2e3-FF-7Dc"/>
+                            <constraint firstItem="2HY-jm-Wrp" firstAttribute="centerY" secondItem="8D4-xO-qM7" secondAttribute="centerY" id="4Ru-cC-RKm"/>
+                            <constraint firstItem="iPh-7c-yME" firstAttribute="top" secondItem="bvv-KK-J8T" secondAttribute="bottom" constant="33" id="4aJ-60-Yjw"/>
+                            <constraint firstItem="bvv-KK-J8T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GkT-xc-amv"/>
+                            <constraint firstItem="wec-J2-zj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="PDq-v5-Saf"/>
+                            <constraint firstItem="jo6-5O-LC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RiU-ud-PRB"/>
+                            <constraint firstItem="2HY-jm-Wrp" firstAttribute="leading" secondItem="wec-J2-zj9" secondAttribute="trailing" constant="71" id="UHO-5I-aj4"/>
+                            <constraint firstItem="bvv-KK-J8T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="233" id="UIE-LL-Euq"/>
+                            <constraint firstItem="8D4-xO-qM7" firstAttribute="baseline" secondItem="2HY-jm-Wrp" secondAttribute="firstBaseline" id="WQU-Cp-iSk"/>
+                            <constraint firstItem="bvv-KK-J8T" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iPh-7c-yME" secondAttribute="trailing" id="kk9-1O-clv"/>
+                            <constraint firstItem="bvv-KK-J8T" firstAttribute="leading" secondItem="iPh-7c-yME" secondAttribute="leading" id="lSD-gi-Nqe"/>
+                            <constraint firstAttribute="bottom" secondItem="2HY-jm-Wrp" secondAttribute="bottom" constant="375" id="rkq-Q2-Wxm"/>
+                            <constraint firstItem="iPh-7c-yME" firstAttribute="centerX" secondItem="jo6-5O-LC9" secondAttribute="centerX" id="spz-qc-q8v"/>
+                            <constraint firstItem="8D4-xO-qM7" firstAttribute="leading" secondItem="2HY-jm-Wrp" secondAttribute="trailing" constant="60" id="viu-TA-9WD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8D4-xO-qM7" secondAttribute="trailing" constant="34" id="w9j-HN-dY2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="jo6-5O-LC9" id="DK9-Nc-NdA"/>
+                        <outlet property="questionLabel" destination="bvv-KK-J8T" id="9Lq-ew-l4J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.846153846153847" y="88.151658767772503"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Egg Choices" width="620" height="259"/>
+    </resources>
+</document>
