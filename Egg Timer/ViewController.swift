@@ -15,6 +15,6 @@ class ViewController: UIViewController {
     
     //MARK: - Egg Choices Pressed
     @IBAction func choicesPressed(_ sender: UIButton) {
-        
+
     }
 }
