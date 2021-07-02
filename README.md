@@ -11,4 +11,4 @@ You will learn Progress Views, Functions, Timers & AVFoundation, and much more.
 
 
 
->This is a project from the iCodeLife iOS 14 Swift 5 Course, check out the full course at [www.icodelife.com/courses](https://www.icodelife.com/courses)
+>This is a project from the iCodeLife iOS 15 & Swift Course, check out the full course at [www.icodelife.com/courses](https://www.icodelife.com/courses)
